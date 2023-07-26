@@ -21,5 +21,8 @@ jobs:
     - name: Install dependencies
       run: npm install
       
+    - name: typescript
+      run: npm run build
+      
     - name: Build the Docker image
       run: docker compose up --build -d
